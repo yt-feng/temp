@@ -1,0 +1,38 @@
+/* pages/select/speed.wxss */
+.button-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  height: 10%;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(124, 124, 124);
+  margin-top: 20px;
+  margin-bottom: 0px;
+  z-index: -1;
+  text-align: center;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  height: 300%vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.but view{
+  background: transparent;
+}

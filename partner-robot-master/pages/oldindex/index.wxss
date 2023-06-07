@@ -1,0 +1,54 @@
+/* pages/startPage/start.wxss */
+button {
+  background-color: #ffd700;
+  height: 150rpx;
+  text-align: center;
+  padding: 10px 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 0 #b28e00;
+}
+.row1{
+  width: 600rpx;
+}
+.row2{
+  width: 280rpx;
+}
+/* pages/select/speed.wxss */
+.button-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 背景图片样式 */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+/* 外层容器，负责按钮整体布局 */
+.container {
+  height: 100%vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* view容器的样式，负责第三行按钮布局 */
+.button {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  height: 15%;
+}
+

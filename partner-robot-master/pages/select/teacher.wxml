@@ -1,0 +1,52 @@
+<!--pages/select/teacher.wxml-->
+<view>
+  <image class="background" src="/images/background/background.png"></image>
+</view>
+<view class="title">请选择你的私人教练</view>
+<view class="container">
+  <view class="row">
+    <view bindtap="navigateToPage" class="content" hover-class="none">
+      <view>
+        <image src="../../images/teachers/teacher1.png" style="width: 180rpx;height: 180rpx;"></image>
+        <view>Caius</view>
+      </view>
+    </view>
+
+    <view bindtap="navigateToPage"  class="content" hover-class="none">
+      <view>
+        <image src="../../images/teachers/teacher2.png" style="width: 180rpx;height: 180rpx;"></image>
+        <view>laurina</view>
+      </view>
+    </view>
+
+    <view bindtap="navigateToPage" class="content" hover-class="none">
+      <view>
+        <image src="../../images/teachers/teacher3.png" style="width: 180rpx;height: 180rpx;"></image>
+        <view>Ada</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="row">
+    <view bindtap="navigateToPage"  class="content" hover-class="none">
+      <view>
+        <image src="../../images/teachers/teacher4.png" style="width: 180rpx;height: 180rpx;"></image>
+        <view>Albert</view>
+      </view>
+    </view>
+
+    <view bindtap="navigateToPage"  class="content" hover-class="none">
+      <view>
+        <image src="../../images/teachers/teacher5.png" style="width: 180rpx;height: 180rpx;"></image>
+        <view>Lora</view>
+      </view>
+    </view>
+
+    <view bindtap="navigateToPage"  class="content" hover-class="none">
+      <view>
+        <image src="../../images/teachers/teacher6.png" style="width: 180rpx;height: 180rpx;"></image>
+        <view>Adela</view>
+      </view>
+    </view>
+  </view>
+</view>

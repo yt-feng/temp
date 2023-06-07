@@ -1,0 +1,134 @@
+/* 表单组件容器样式 */
+.form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 10rpx;
+}
+
+/* 输入框样式 */
+.input-box {
+  flex: 1;
+  margin-right: 20rpx;
+  font-size: 28rpx;
+  color: #333;
+  border: none;
+  outline: none;
+}
+
+/* 提交按钮样式 */
+.submit-btn {
+  font-size: 28rpx;
+  color: #fff;
+  background-color: #1aad19;
+  border: none;
+  border-radius: 10rpx;
+  padding: 10rpx 20rpx;
+}
+
+/*数量框*/
+.choosenumbox{
+  width: 300rpx;
+  display: flex;
+  direction: ltr;
+  border-radius: 10rpx;
+  border: 1rpx solid #cfcfcf;
+}
+.choosenumbox view{
+  display: flex;
+  justify-content: center;
+  width: 300rpx;
+  height: 50rpx;
+}
+.del{
+  width: 10rpx;
+  font-size: 36rpx;
+  color: #616161;
+}
+.add{
+  width: 10rpx;
+font-size: 36rpx;
+ color: #616161;
+}
+.num{
+  border-left:1rpx solid #cfcfcf;
+  border-right: 1rpx solid #cfcfcf;
+  width: 100%;
+}
+.num input{
+  font-size: 36rpx;
+  color: #f22d2d;
+  text-align: center;
+}
+.row{
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+  display: flex;
+  flex-direction: row;
+
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+/* 设置 scroll-view 的样式 */
+scroll-view {
+  border: 1px solid #ccc; /* 添加边框 */
+  border-radius: 5px; /* 圆角边框 */
+  overflow-y: scroll; /* 垂直滚动条 */
+  padding: 10px; /* 内部间距 */
+}
+
+/* 设置 view 的样式 */
+.view {
+  display: flex; /* 使用 Flexbox */
+  justify-content: space-between; /* 水平分布 */
+  border-bottom: 1px solid #eee; /* 底部分隔线 */
+  padding: 8px 0; /* 上下内部间距，左右内部间距为 0 */
+}
+
+/* 设置第一个 view 的样式（即 label）*/
+.view:first-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 设置第二个 view 的样式（即 code）*/
+.view:last-child {
+  color: #999;
+}
+
+radio .wx-radio-input{
+  line-height: 60rpx;
+  text-align: center;
+  z-index: 10;
+  border-radius: 50%;
+  width: 60rpx;
+  height: 60rpx;
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked{
+  z-index: 10;
+  border: none;
+  background: red;
+}
+
+radio .wx-radio-input.wx-radio-input-checked::before{
+  z-index: -5;
+ border-radius: 50%;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size:30rpx; 
+  color:rgb(255, 255, 255);
+  background: transparent;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-transform:translate(-50%, -50%) scale(1);
+}

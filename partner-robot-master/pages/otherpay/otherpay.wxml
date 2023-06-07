@@ -1,0 +1,171 @@
+<view style="position: absolute;top: 0rpx;left: 0rpx;opacity: 0.7;background-color: black;width: 100%;height: 100%;">
+      </view>
+			<image class="background" style="z-index: -999;"
+				src="{{url[1]}}">
+			</image>
+
+<image class="background" style="z-index: -999;" src="https://mp-e5245a2d-e568-43d9-8bc9-6ace734752d4.cdn.bspapp.com/cloudstorage/df9d472b-c36d-49c1-bf6e-8c3aaef1262e.jpeg">
+</image>
+<view style="height: 100%;">
+  <view>
+    <!-- top -->
+    <view class="top">
+      <view class="top_img"></view>
+
+      <!-- info -->
+
+      <view class="card">
+        <view class="info">
+          <view style="position:relative;height: 200rpx;width: 220rpx;">
+            <image src="{{mel[(me-1)]}}" style="width: 200rpx; height: 200rpx;left:0rpx;bottom: 0rpx"></image>
+          </view>
+          <view style="font-size: 40rpx;margin-bottom: 5%; font-family: Helvetica, sans-serif;font-weight: bold;color: #ffffff;margin-top: 1%;">{{name}}</view>
+        </view>
+        <view class="vip_num_now" style="display: flex; justify-items: center;flex-direction: column;align-items:center;">
+          <image src="{{vipl[type]}}" style="position: relative;width: 180rpx;height: 180rpx;z-index: 5;"></image>
+          <!-- <view class="num_title">{{typename}}</view>
+          <view class="vip_num">有效至{{showend}}</view> -->
+        </view>
+      </view>
+      <!-- help -->
+    </view>
+
+    <!-- pay -->
+    <view class="recharge">
+      <view class="recharge_select">
+        <view class="{{ordertype==1?'select_item_Y':'select_item'}}" bindtap="order" data-type="1">
+          <view style="display: flex;">
+
+            <image src="{{vipl[1]}}" class="icon"></image>
+            <view class="select_title">
+              <view>5分钟</view>
+              <!-- <view class="sec_select_title" style="font-size: 24rpx;">平均每日{{ avarprice1}}元</view> -->
+            </view>
+          </view>
+
+          <view style="display: flex;justify-content: space-between; width: 45%; position: relative;width: 200rpx;;">
+            <view style="margin-top: 30rpx; max-width: 150rpx;">
+              <!-- <view style="position: absolute;top: 0;font-size: 24rpx;background-color: red;color: #fff;">
+                限时特惠
+              </view> -->
+
+              <!-- 价格 -->
+              <view style="display: flex">
+                <view class="select_money" style="display: inline;position: relative;font-size: 40rpx;">2     元
+                </view>
+                <!-- <view class="select_money" style="display: inline;position: relative;font-size: 40rpx;text-decoration: line-through;margin-left: 20rpx;">￥99</view> -->
+              </view>
+              <view style="font-size: 25rpx;text-shadow: none;color: red; white-space: nowrap; width: 200rpx; overflow: hidden; text-overflow: ellipsis;" wx:if="{{discount<10}}">折扣价：{{d1}}</view>
+            </view>
+          </view>
+        </view>
+
+
+        <view class="{{ordertype==2?'select_item_Y':'select_item'}}" bindtap="order" data-type="2">
+          <view style="display: flex;">
+
+            <image src="{{vipl[2]}}" class="icon"></image>
+            <view class="select_title">
+              <view>1小时</view>
+              <!-- <view class="sec_select_title" style="font-size: 24rpx;">平均每日{{ avarprice2}}元</view> -->
+            </view>
+          </view>
+
+          <view style="display: flex;justify-content: space-between; width: 45%; position: relative;width: 200rpx;">
+            <view style="margin-top: 30rpx; max-width: 150rpx;">
+              <!-- <view style="position: absolute;top: 0;font-size: 24rpx;background-color: red;color: #fff;">
+                限时特惠
+              </view> -->
+              <!-- 价格 -->
+              <view style="display: flex">
+                <view class="select_money" style="display: inline;position: relative;font-size: 40rpx;">6     元
+                </view>
+                <!-- <view class="select_money" style="display: inline;position: relative;font-size: 40rpx;text-decoration: line-through;margin-left: 20rpx;">￥289</view> -->
+              </view>
+              <view style="font-size: 25rpx;text-shadow: none;color: red; white-space: nowrap; width: 200rpx; overflow: hidden; text-overflow: ellipsis;" wx:if="{{discount<10}}">折扣价：{{d2}}</view>
+            </view>
+          </view>
+        </view>
+
+
+        <view class="{{ordertype==3?'select_item_Y':'select_item'}}" bindtap="order" data-type="3">
+          <view style="display: flex;">
+
+            <image src="{{vipl[3]}}" class="icon"></image>
+            <view class="select_title">
+              <view>1天</view>
+              <!-- <view class="sec_select_title" style="font-size: 24rpx;">平均每日{{ avarprice3}}元</view> -->
+            </view>
+          </view>
+
+          <view style="display: flex;justify-content: space-between; width: 45%; position: relative;width: 200rpx;">
+            <view style="margin-top: 30rpx; max-width: 150rpx;">
+              <!-- <view style="position: absolute;top: 0;font-size: 24rpx;background-color: red;color: #fff;">
+                限时特惠
+              </view> -->
+              
+              <!-- 价格 -->
+              <view style="display: flex">
+                <view class="select_money" style="display: inline;position: relative;font-size: 40rpx;">9.9     元
+                </view>
+                <!-- <view class="select_money" style="display: inline;position: relative;font-size: 40rpx;text-decoration: line-through;margin-left: 20rpx;">￥569</view> -->
+              </view>
+              <view style="font-size: 25rpx;text-shadow: none;color: red; white-space: nowrap; width: 200rpx; overflow: hidden; text-overflow: ellipsis;" wx:if="{{discount<10}}">折扣价：{{d3}}</view>
+            </view>
+          </view>
+        </view>
+
+
+        <!-- <view class="{{ordertype==4?'select_item_Y':'select_item'}}" bindtap="order" data-type="4">
+          <view style="display: flex;">
+
+            <image src="{{vipl[4]}}" class="icon"></image>
+            <view class="select_title">
+              <view>年卡</view>
+              <!-- <view class="sec_select_title" style="font-size: 24rpx;">平均每日{{ avarprice4}}元</view> -->
+            <!-- </view>
+          </view> -->
+
+          <!-- <view style="display: flex;justify-content: space-between; width: 45%; position: relative;width: 102px;margin-right: 60rpx;">
+            <view style="margin-top: 30rpx; max-width: 150rpx;">
+              <view style="position: absolute;top: 0;font-size: 24rpx;background-color: red;color: #fff;">
+                限时特惠
+              </view>
+     
+              <!-- 价格 -->
+              <!-- <view style="display: flex">
+                <view class="select_money" style="display: inline;position: relative;font-size: 40rpx;">￥259
+                </view>
+                <view class="select_money" style="display: inline;position: relative;font-size: 40rpx;text-decoration: line-through;margin-left: 20rpx;">￥999</view>
+              </view>
+              <view style="font-size: 25rpx;text-shadow: none;color: red; white-space: nowrap; width: 200rpx; overflow: hidden; text-overflow: ellipsis;" wx:if="{{discount<10}}">折扣价：{{d4}}</view>
+            </view> -->
+          <!-- </view>  -->
+
+        <!-- </view>  -->
+
+
+
+
+      </view>
+    </view>
+  </view>
+
+  <!-- <view class="form-item" style="margin-top: 10rpx;margin-bottom: 50rpx;">
+    <input type="text" placeholder="输入邀请码以获取优惠" bindinput="onCodeInput" style="width: 60%;position: relative;left: 5%;height: 60rpx;" />
+    <button type="primary" bindtap="onSubmit" style="width: 40%;height: 100%;justify-content: center;line-height: 70rpx;background-color: transparent;color: rgb(255, 255, 255);font-size: 35rpx;font-weight: 400; background-color: rgb(106,107,106);border-radius: 20rpx;">应用折扣</button>
+  </view> -->
+
+</view>
+
+<button class="order-btn" bindtap="pay">确定</button>
+
+<!-- 购买成功弹窗 -->
+
+<view class="mask" wx:if="{{showModal}}"></view>
+<!-- 弹出层 -->
+<view class="modalDlg" wx:if="{{showModal}}">
+  <image src="{{vipl[type]}}" style="position: relative;width: 180rpx;height: 180rpx;z-index: 5;"></image>
+  <text class="text" style="text-align: center;font-weight: bold;color: black;font-size: 30rpx;">恭喜！\n您已成功开启冒险</text>
+  <button bindtap="close" style="position: relative;">确定</button>
+</view>

@@ -1,0 +1,51 @@
+<view>
+  <image class="background" src="/images/background/background.png"></image>
+</view>
+<view>
+  <!-- 头像卡 -->
+  <view class="mt">
+    <!-- top -->
+    <view class="top">
+      <image class="top_img" src="/images/pay/bg_money.png"></image>
+      <!-- day -->
+      <view class="vip_num_now">
+        <view class="num_title">VIP剩余天数</view>
+        <view class="vip_num">{{vip}}</view>
+      </view>
+      <!-- info -->
+      <view class="info">
+        <image class="im" src="../../images/me/me{{me}}.png"></image>
+        <view class="agreement" style="display: inline;">
+          <view bindtap="change" style="display: inline;">
+            <image src="../../images/changename.png" style="right: 5rpx;z-index: 10;position: relative;width: 30rpx;height: 30rpx;bottom: -5rpx;"></image>
+          </view>
+          <view wx:if="{{!change}}" style="color: rgb(0, 0, 0);display:inline;">{{name}}</view>
+          <form wx:if="{{change}}" bindsubmit="changed" style="display:inline;height: 10rpx;width: 200rpx;">
+            <input placeholder="请输入昵称" type="nickname" name="nickname" maxlength="16" style="position: relative;left: -10rpx;"></input>
+            <button form-type="submit" role="button" aria-disabled="false" style="width: 80px;height: 20px; font-size: 20px;z-index: 9;text-align: center;align-items: center;justify-content: center;line-height: 22rpx;box-shadow: 0 2px 0 #b28e00;">Enter</button>
+          </form>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 个人信息 -->
+<image class="info_img" src="/images/pay/bg_money.png"></image>
+<view class="info_content">
+  <view class="day">坚持练习</view>
+  <view class="list">等级</view>
+  <view class="lv">我的积分</view>
+  <view class="start">vip开通日期</view>
+  <view class="end">vip截至日期</view>
+</view>
+<view class="data_content">
+  <view class="day">{{day === 0 ? '0' : day}}天</view>
+  <view class="list">{{lv === 0 ? '0' : lv}}</view>
+  <view class="lv">{{points === 0 ? '0' : points}}</view>
+  <view class="start">{{start === 0 ? '0' : start}}</view>
+  <view class="end">{{end === 0 ? '0' : end}}</view>
+</view>
+
+<view class="button"><button class="row2" bindtap="me">我的装备</button>
+  <button class="row2" bindtap="pay">充值</button>
+</view>

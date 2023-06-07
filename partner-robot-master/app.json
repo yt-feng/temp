@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/help",
+    "pages/person/person",
+    "pages/newpage/index",
+    "pages/manage/manage",
+    "pages/decorate/decorate",
+    "pages/teacher/teacher",
+    "pages/map/map",
+    "pages/setting/setting",
+    "pages/choice/speed",
+    "pages/pay/pay",
+    "pages/select/speed",
+    "pages/select/teacher",
+    "pages/first/decorate",
+    "pages/first/teacher",
+    "pages/weekendmanage/weekendmanage",
+    "pages/otherpay/otherpay"
+  ],
+  "permission": {
+    "scope.record": {
+      "desc": "请求获取录音权限用于发送消息"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffaa00",
+    "navigationBarTextStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 25000,
+    "downloadFile": 100000
+  },
+  "sitemapLocation": "sitemap.json"
+}

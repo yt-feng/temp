@@ -1,0 +1,207 @@
+.arrow {
+	width: 40rpx;
+	height: 40rpx;
+	border-top: 8rpx solid #999;
+	border-right: 8rpx solid #999;
+	/* 旋转45度 */
+	transform: rotate(45deg);
+	/* 调整位置 */
+	position: absolute;
+	top: 30rpx;
+	right: 50rpx;
+}
+
+.myavatar {
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+/* 顶部 */
+.top {
+	margin-top: 10rpx;
+	width: 100%;
+  /* height: 326rpx; */
+  height: 326rpx;
+}
+
+.top .top_img {
+	position: relative;
+	left: 5%;
+	width: 90%;
+	height: 326rpx;
+	opacity: 0.8;
+	background-color: #9cd693;
+	border-radius: 20px;
+
+}
+
+.points {
+	margin-top: 60rpx;
+	position: relative;
+	/* height: 220rpx; */
+	background-color: #ffff7f;
+	opacity: 0.8;
+	left: 5%;
+	width: 90%;
+	margin-bottom: 10rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+  border-radius: 20px;
+  height: 400rpx;
+
+}
+
+.top .vip_num_now {
+	position: absolute;
+	top: 90rpx;
+	left: 380rpx;
+	color: rgb(112, 112, 112);
+	height: 160rpx;
+}
+
+.top .vip_num_now .vip_num {
+	font-size: 20rpx;
+	font-weight: 700;
+}
+
+.num_title {
+	letter-spacing: 0.2rem;
+	font-size: 40rpx;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.num_title {
+	animation: rainbow 1s alternate infinite forwards;
+}
+
+@keyframes rainbow {
+	0% {
+		color: #efc68f;
+	}
+
+	100% {
+		color: #8fefed;
+	}
+}
+
+.recharge {
+	opacity: 0.8;
+	position: relative;
+	left: 5%;
+	width: 90%;
+  /* height: 50%; */
+  /* height: 350rpx; */
+	border-radius: 30rpx;
+	align-items: center;
+	margin-top: 80rpx;
+  background-color: #9cd693;
+  padding-top: 24rpx
+}
+
+
+
+.recharge .recharge_select {
+	margin-top: 30rpx;
+	margin-bottom: 30rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.select_item {
+	opacity: 1;
+	width: 80%;
+	height: 100rpx;
+	background: #d7d7d7;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20rpx;
+	margin-top: 30rpx;
+	justify-content: space-between;
+	/* 字体 */
+	font-size: 50rpx;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+	margin-left: 10rpx;
+	border-radius: 20rpx;
+	line-height: 100rpx;
+}
+
+.recharge .recharge_select .select_item .select_title {
+margin-left: 150rpx;
+	position: relative;
+	left: -180rpx;
+	display: inline;
+}
+
+.recharge .recharge_select .select_item .sec_select_title {
+	margin-top: 20rpx;
+}
+
+.icon {
+	position: relative;
+	width: 80rpx;
+	height: 80rpx;
+	align-self: center;
+	left: 20rpx;
+}
+
+
+.use_coupons {
+	height: 80rpx;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	padding: 0 20rpx;
+	justify-content: space-between;
+}
+
+.use_coupons image {
+	width: 40rpx;
+	height: 40rpx;
+}
+
+.info {
+	position: absolute;
+	top: 65rpx;
+	left: 100rpx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+	color: #000;
+}
+
+.im {
+	width: 72px;
+	/*微信头像大小*/
+	height: 72px;
+	border-radius: 8%;
+	/*圆角*/
+	border: 2px solid white;
+	/*白色包边*/
+	margin-bottom: 10px;
+	/*为了文字距离图片有一定距离*/
+}
+
+.background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.mt{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+

@@ -1,0 +1,82 @@
+.arrow {
+  width: 40rpx;
+  height: 40rpx;
+  border-top: 8rpx solid #999;
+  border-right: 8rpx solid #999;
+  /* 旋转45度 */
+  transform: rotate(45deg);
+  /* 调整位置 */
+  position: absolute;
+  top: 30rpx;
+  right: 50rpx;
+}
+
+
+.recharge {
+opacity: 0.8;
+position: relative;
+left: 5%;
+width: 90%;
+height: 560.5rpx;
+border-radius: 30rpx;
+align-items: center;
+margin-top: 30%;
+background-color: #9cd693;
+padding-top: 24rpx;
+}
+
+
+
+.recharge .recharge_select {
+margin-top: 30rpx;
+margin-bottom: 30rpx;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.select_item {
+opacity: 1;
+width: 80%;
+height: 100rpx;
+background: #d7d7d7;
+display: flex;
+flex-direction: row;
+margin-bottom: 20rpx;
+margin-top: 30rpx;
+justify-content: space-between;
+/* 字体 */
+font-size: 50rpx;
+font-family: Helvetica, sans-serif;
+font-weight: bold;
+color: #000;
+text-align: center;
+margin-left: 10rpx;
+border-radius: 20rpx;
+line-height: 100rpx;
+}
+
+
+.recharge .recharge_select .select_item .sec_select_title {
+margin-top: 20rpx;
+}
+
+.icon {
+position: relative;
+width: 80rpx;
+height: 80rpx;
+align-self: center;
+left: 20rpx;
+}
+
+
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

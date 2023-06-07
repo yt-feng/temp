@@ -1,0 +1,111 @@
+<!-- 表单组件的容器 -->
+<view hidden="{{ex}}">
+  <view style="width: 100%;justify-content: center;text-align: center;">
+    <view style="font-size: 40rpx;align-self: center;margin-bottom: 20rpx;margin-top: 20rpx;">周卡邀请码生成</view>
+  </view>
+
+  <view class="form-container">
+    <view class="left">
+      <!-- 输入框 -->
+      <!-- <input class="input-box" placeholder="请输入内容"></input> -->
+      <!-- 数量选择 -->
+      <view class="row">
+        <view style="text-align: center;font-size:40rpx;">数量：</view>
+        <view class='choosenumbox'>
+          <view class='del' data-type='1' bindtap='countNum'>-</view>
+          <view class='num'>
+            <input type='number' bindblur='checkNum' bindinput='getInputNum' value="{{num}}"></input>
+          </view>
+          <view class='add' data-type='2' bindtap='countNum'>+</view>
+        </view>
+      </view>
+      <view class="row">
+        <view style="text-align: center;font-size:40rpx;">折扣：</view>
+        <!-- 折扣 -->
+        <view class='choosenumbox'>
+          <!-- <view class='del' data-type='1' bindtap='countNum2'>-</view> -->
+          <view class='num'>
+            <input type='number' bindblur='checkNum2' bindinput='getInputNum2' value="{{type}}" disabled="true"></input>
+          </view>
+          <!-- <view class='add' data-type='2' bindtap='countNum2'>+</view> -->
+        </view>
+      </view>
+    </view>
+
+    <!-- 提交按钮 -->
+    <button class="submit-btn" bindtap="creat">生成</button>
+    <button class="submit-btn" bindtap="entry">确认</button>
+    <button class="submit-btn" bindtap="ex">管理</button>
+  </view>
+  <view>
+  </view>
+
+  <!-- 显示区域 -->
+  <scroll-view style="height: 300px;" scroll-y="true">
+    <view class=".view">
+      <view class=".view">标签</view>
+      <view class=".view">邀请码</view>
+      <view class=".view">折扣类型</view>
+    </view>
+    <view wx:for="{{codelist}}" wx:key="{{item.id}}" class=".view">
+      <view class=".view">{{item.label}}</view>
+      <view class=".view">{{item.code}}</view>
+      <view class=".view">{{type}}折</view>
+    </view>
+  </scroll-view>
+
+  <button bindtap="onCopyClick">复制表格</button>
+  <button bindtap="onCopyClick2">复制邀请码</button>
+
+</view>
+<view hidden="{{!ex}}">
+  <view style="width: 100%;justify-content: center;text-align: center;">
+    <view style="font-size: 40rpx;align-self: center;margin-bottom: 20rpx;margin-top: 20rpx;">邀请码管理</view>
+  </view>
+
+  <view class="form-container">
+    <view class="left">
+      <!-- 输入框 -->
+      <!-- <input class="input-box" placeholder="请输入内容"></input> -->
+      <!-- 数量选择 -->
+      <view class="row">
+        <radio-group bindchange="classchange">
+          <radio color="red" value="label" style="margin-right: 20rpx;">label
+          </radio>
+          <radio color="red" value="fee">金额</radio>
+        </radio-group>
+
+      </view>
+
+      <view class="row">
+        <radio-group bindchange="directchange">
+          <radio color="red" value="C" style="margin-right: 20rpx;">正序</radio>
+          <radio color="red" value="R" style="margin-right: 20rpx;">倒序
+          </radio>
+        </radio-group>
+      </view>
+    </view>
+    <!-- 提交按钮 -->
+    <button class="submit-btn" bindtap="Sort">查询</button>
+    <button class="submit-btn" bindtap="ex">生成</button>
+  </view>
+  <view>
+  </view>
+
+  <!-- 显示区域 -->
+  <scroll-view style="height: 300px;" scroll-y="true">
+    <view class=".view">
+      <view class=".view">标签</view>
+      <view class=".view">邀请码</view>
+      <view class=".view">折扣</view>
+      <view class=".view">总金额</view>
+    </view>
+    <view wx:for="{{usinglist}}" wx:key="{{item.id}}" class=".view">
+      <view class=".view">{{item.label}}</view>
+      <view class=".view">{{item.code}}</view>
+      <view class=".view">{{item.type}}折</view>
+      <view class=".view">{{item.fee}}元</view>
+    </view>
+  </scroll-view>
+  <button bindtap="onCopyClick3">复制表格</button>
+</view>
