@@ -1,9 +1,0 @@
-<view>
-  <image class="background" src="/images/background/background.png"></image>
-</view>
-<view class="container">
-  <view class="button"> <button class="row1" bindtap="">开始探索</button></view>
-  <view class="button"><button class="row1" bindtap="list">好友排名</button></view>
-  <view class="button"><button class="row2" bindtap="book">旅行手册</button>
-    <button class="row2" bindtap="package">我的背包</button></view>
-</view>
